@@ -4,14 +4,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
     <title>Formulario</title>
 </head>
 <body>
     <h1 id="title"></h1>
     <p id="description"></p>
     <form action="" id="survey-form">
-
+        <ul>
+            <li>
+                <label for="name"></label>
+                <input type="text" id="name" placeholder="Enter your name" required>
+            </li>
+            <li>
+                <label for="email"></label>
+                <input type="email" name="email" id="email" pattern="/\S+@\S+\.\S+/" placeholder="Enter your Email" required>
+            </li>
+            <li>
+                <label for="number"></label>
+                <input type="number" name="number" id="number" min="17" max="100" placeholder="Age">
+            </li>
+            <!-- requeriment 9 -->
+        </ul>
     </form>
 </body>
 </html>
