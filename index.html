@@ -9,38 +9,38 @@
 </head>
 <body>
     <h1 id="title">freeCodeCamp Survey Form</h1>
-    <p id="description">Thank you for taking the time to help us improve the platform</p>
+    <p id="description"><i>Thank you for taking the time to help us improve the platform</i></p>
     <form action="" id="survey-form">
-        <ul class="form-grup">
-            <li>
-                <label for="name" id="name-label">Name</label>
-                <input type="text" id="name" placeholder="Enter your name" required>
-            </li>
-            <li>
-                <label for="email" id="email-label">Email</label>
-                <input type="email" name="email" id="email" pattern="/\S+@\S+\.\S+/" placeholder="Enter your Email" required>
-            </li>
-            <li>
-                <label for="number" id="number-label">Age(optional)</label>
-                <input type="number" name="number" id="number" min="15" max="100" placeholder="Age">
-            </li>
-            <li>
-                <label for="dropdown">Which option best describes your current role?</label>
-                <select name="" id="dropdown">
-                    <option disabled selected value>Sect current role</option>
-                    <option value="Student">Student</option>
-                    <option value="Full time job">Full time job</option>
-                    <option value="Full time learner">Full time learner</option>
-                    <option value="Prefered not to say">Prefered not to say</option>
-                    <option value="Other">Other</option>
-                </select>
-            </li>     
-        </ul>
+    
+        <div class="form-grup">
+            <label for="name" id="name-label">Name</label>
+            <input type="text" id="name" placeholder="Enter your name" required>
+        <div>
+        <div class="form-grup">
+            <label for="email" id="email-label">Email</label>
+            <input type="email" name="email" id="email" pattern="/\S+@\S+\.\S+/" placeholder="Enter your Email" required>
+        </div>
+        <div class="form-grup">
+            <label for="number" id="number-label">Age(optional)</label>
+            <input type="number" name="number" id="number" min="15" max="100" placeholder="Age">
+        </div>
+        <div class="form-grup">
+            <label for="dropdown">Which option best describes your current role?</label>
+            <select name="" id="dropdown" class="drop">
+                <option disabled selected value>Sect current role</option>
+                <option value="Student">Student</option>
+                <option value="Full time job">Full time job</option>
+                <option value="Full time learner">Full time learner</option>
+                <option value="Prefered not to say">Prefered not to say</option>
+                <option value="Other">Other</option>
+            </select>
+        </div>     
+
         <div class="form-grup">
             <p>Would you recommend freeCodeCamp to a friend?</p>
-            <label for="op1"><input type="radio" name="user-recommend" id="op1" checked>Definitely</label>
-            <label for="op2"><input type="radio" name="user-recommend" id="op2">Maybe</label>
-            <label for="op3"><input type="radio" name="user-recommend" id="op3">Not sure</label>
+            <label for="op1"><input type="radio" name="user-recommend" id="op1" value="Definitely" checked>Definitely</label>
+            <label for="op2"><input type="radio" name="user-recommend" id="op2" value="Maybe">Maybe</label>
+            <label for="op3"><input type="radio" name="user-recommend" id="op3" value="Not-sure">Not sure</label>
         </div>
         <div class="form-grup">
             <label for="dropdown">What is your favorite feature of freeCodeCamp?</label>
