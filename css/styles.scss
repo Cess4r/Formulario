@@ -15,6 +15,24 @@ body{
     text-align: center;
     color: rgb(228, 208, 208);
 
+    #description{
+        display: block;
+        margin: auto;
+        white-space: nowrap;
+        border-right: 4px solid;
+        width: 61ch;
+        animation: typing 4s steps(40), blink .5s infinite step-end alternate;
+        overflow: hidden;
+    }    /* 61 */
+    @keyframes typing {
+        from{width: 0;}
+    }
+    @keyframes blink {
+        50%{border-color: transparent;}
+    }
+
+
+
     form{
         border-radius: 0.8em;
         max-width: 600px;
