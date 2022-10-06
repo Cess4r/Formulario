@@ -10,28 +10,26 @@ body{
     background-image: url(img/nubelson-fernandes--Xqckh_XVU4-unsplash.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-blend-mode: luminosity;
     background-position: center;
     text-align: center;
     color: rgb(228, 208, 208);
-
+    font-size: 18px;
+    
     #description{
         display: block;
         margin: auto;
         white-space: nowrap;
         border-right: 4px solid;
-        width: 61ch;
-        animation: typing 4s steps(40), blink .5s infinite step-end alternate;
+        width: 24ch;
+        animation: typing 3.3s steps(25), blink .5s infinite step-end alternate;
         overflow: hidden;
-    }    /* 61 */
+    }   
     @keyframes typing {
         from{width: 0;}
     }
     @keyframes blink {
         50%{border-color: transparent;}
     }
-
-
 
     form{
         border-radius: 0.8em;
@@ -40,14 +38,46 @@ body{
         text-align: start;   
         margin: 30px auto;
         padding: 4%;
+        backdrop-filter: blur(7px);
+        border: 1px solid rgba(128, 128, 128, 0.267);
+        box-shadow: 0px 0px 30px 0px rgba(15, 15, 15, 0.61);
     }
 
     .form-grup{
         display: flex;
         flex-direction: column;
-        #name, #email, #number, .drop{
+        margin-bottom: 0.5em;
+
+        #name, #email, #number, .drop, #dropdown1{
             display: block;
+            background: none;
+            margin-bottom: 1.5em;
+            border: 1px solid gray;
+            height: 35px;
+            color: gray;
+            border-radius: 3px;
         }
+
+        textarea{
+            background: none;
+            color: rgb(228, 208, 208);
+            height: 70px;
+        }
+
+        .Com{
+            text-align: center;
+            #submit{
+                width: 60%;
+                height: 35px;
+                margin: auto;
+                background:rgba(248, 22, 22, 0.897);
+                border: none;
+                border-radius: 3px;
+                color: rgb(228, 208, 208);
+        
+            }
+        }
+       
     }
     
 }
