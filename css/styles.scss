@@ -54,7 +54,55 @@ body{
         backdrop-filter: blur(7px);
         border: 1px solid rgba(128, 128, 128, 0.267);
         box-shadow: 0px 0px 30px 0px rgba(15, 15, 15, 0.61);
+        
     }
+    /* buttons */
+    input[type="radio"]{
+        display: none;
+
+        &:checked+label{
+            padding: 4px 15px;
+            background: gray;
+            border-radius: 3px;
+        }
+
+        &:checked+label::before{
+            display: none;
+        }
+    }
+
+
+    .radian label{
+        color: rgb(228, 208, 208);
+        background: rgba(248, 22, 22, 0.897);
+        padding: 4px 15px 4px 51px;
+        display: inline-block;
+        position: relative;
+        margin: 2px 0;
+        border-radius: 3px;
+        cursor: pointer;
+        transition: 0.3s;
+
+        &:hover{
+            background: white;
+        }
+
+        &::before{
+            content: "";
+            width: 15px;
+            height: 15px;
+            display: inline-block;
+            background: none;
+            border: 2px solid rgb(228, 208, 208);
+            border-radius: 50%;
+            position: absolute;
+            left: 17px;
+        }
+
+        
+    }
+
+    
 
     .form-grup{
         display: flex;
@@ -69,10 +117,6 @@ body{
             height: 35px;
             color: gray;
             border-radius: 3px;
-        }
-
-        .radio{
-            background-color: red;
         }
 
         textarea{
