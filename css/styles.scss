@@ -56,13 +56,14 @@ body{
         box-shadow: 0px 0px 30px 0px rgba(15, 15, 15, 0.61);
         
     }
+    
     /* buttons */
-    input[type="radio"]{
+    input[type="radio"], .check input[type="checkbox"]{
         display: none;
 
         &:checked+label{
             padding: 4px 15px;
-            background: gray;
+            background: rgba(248, 22, 22, 0.897);
             border-radius: 3px;
         }
 
@@ -72,9 +73,9 @@ body{
     }
 
 
-    .radian label{
+    .radian label, .check label{
         color: rgb(228, 208, 208);
-        background: rgba(248, 22, 22, 0.897);
+        background: gray;
         padding: 4px 15px 4px 51px;
         display: inline-block;
         position: relative;
